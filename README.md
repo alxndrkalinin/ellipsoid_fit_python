@@ -1,12 +1,8 @@
 # Ellipsoid fit python
 Find ellipsoid fit for arbitrary data with python/numpy, plot it or write to file.
-(Should work on both python 2.7 and python 3)
-
-![Plot example](demo_screenshot.png)
+(Uses python 2.7)
 
 Used for 3-axis magnetometer calibration.
-
-If you want to fit an ellipse into arbitrary data take a look at issue #11 - I tried to explain how to maybe do it. Also look through other opened issues. 
 
 Project is a port of matlab/octave http://www.mathworks.com/matlabcentral/fileexchange/24693-ellipsoid-fit to python/numpy
 with some data regularization and fancy plotting on matplotlib added. It utilizes minimum squares method.
@@ -22,8 +18,3 @@ three rows are ellipsoid axes.
 Requirements are:
 - numpy
 - matplotlib for plotting
-
-Update: for close version to Matlab look here 
-https://github.com/marksemple/pyEllipsoid_Fit
-
-Update 2: Matplotlib from version 3 does not support equal axis, so spere plot may appear as not a sphere. If you still want a sphere remain a sphere on a plot, look into issue #10 (basically downgrade matplotlib and uncomment 3 lines at plot_ellipsoid.py).
